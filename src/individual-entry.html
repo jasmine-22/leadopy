@@ -67,14 +67,14 @@
     </ul>
     </div>
 
-    <div class="flex p-8 py-3 w-4/5  ">
+    <div class="flex p-8 py-3 w-4/5 ml-8   ">
         <img src="./img/Leadopy form icon.png" class="w-16 h-16 my-6">
         <div class="w-full flex-grow pl-8 pt-5
          ">
-        <h1 class="text-lg text-black font-medium relative">Natasha Rodriguez  <i class="fa-solid fa-circle-check check-box absolute -top-0.5 left-40 text-xs text-green-500"></i></h1>
+        <h1 class="text-lg text-black font-medium relative ml-3">Natasha Rodriguez  <i class="fa-solid fa-circle-check check-box absolute -top-0.5 left-40 text-xs text-green-500"></i></h1>
        
-       <div class="flex">
-        <div class="w-2/5 pt-6" >
+       <div class="flex flex-col md:flex-row   mt-6">
+        <div class="w-2/5 " >
                
             <div class="px-4 py-1 border-solid  flex justify-between items-center">
                 <div class="text-left"><i class="fa-solid fa-calendar-days icon"></i></div>
@@ -103,7 +103,7 @@
             </div>
            
         </div>
-        <div class="w-2/6 mt-6" >
+        <div class="w-2/4 " >
                
             <div class=" px-4 py-1  bg-[#EE64431A] rounded-lg mb-2 border-solid  flex justify-between items-center">
                 <div class="text-left"><i class="fa-solid fa-envelope icon "></i></div>
@@ -132,6 +132,28 @@
 
                 
             </div>
+           
+        </div>
+        <div class="w-3/6   " >
+            
+               
+          
+           
+        </div>
+        <div class="w-1/7   bg-white rounded-lg mb-6 " >
+            <div class="flex flex-col items-center p-5 "> 
+                <h1 class="font-semibold text-sm"> Lead Status</h1>
+                <div class="flex justify-around items-center mt-5">
+                   <div class="px-3 p-2 rounded-full mr-4 bg-gray-100  ">
+                    <i class="fa-solid fa-thumbs-up text-gray-500 "></i>
+                   </div>
+                   <di class="px-3 p-2 rounded-full bg-gray-100">
+                    <i class="fa-solid fa-thumbs-down text-gray-500"></i>
+                   </di>
+                </div>
+            </div>
+               
+          
            
         </div>
      
@@ -288,10 +310,7 @@
                     </div>
                     <div class="mt-20 flex justify-between">
                         <div>
-                            <button class="mr-6 mt-6 bg-[#1AA800] text-white text-sm font-medium  mx-auto text-center rounded-lg p-2
-                         ">Qualified</button>
-                         <button class="mr-6 mt-6 bg-[#9B9B9B] text-white  text-sm font-medium mx-auto text-center rounded-lg p-2
-                         ">Not Qualified</button>
+                         
                          </div>
                         <div>
                             <button href="#modalArchive" class="modal-button mr-6 mt-6  bg-[#9B9B9B] text-white text-sm font-medium mx-auto text-center rounded-lg p-2
@@ -374,13 +393,6 @@
 
     <script>
 
-// var modal = document.getElementById("myModal");
-
-
-// var btn = document.getElementById("myBtn");
-
-
-
 
 
 //  function showModal() {
@@ -392,33 +404,17 @@
 // }
 
 
-// var modalCall = document.getElementById("modalCall");
 
-
-// var btn = document.getElementById("myBtn");
-
-
-
-
-
-//  function showCallModal() {
-//   modalCall.style.display = "block";
-// }
-
-//   span.onclick = function() {
-//   modalCall.style.display = "none";
-// }
 
 
 var btn = document.querySelectorAll("button.modal-button");
 
-// All page modals
+
 var modals = document.querySelectorAll('.modal');
 
-// Get the <span> element that closes the modal
+
 var spans = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
     e.preventDefault();
@@ -427,7 +423,7 @@ for (var i = 0; i < btn.length; i++) {
  }
 }
 
-// When the user clicks on <span> (x), close the modal
+
 for (var i = 0; i < spans.length; i++) {
  spans[i].onclick = function() {
     for (var index in modals) {
@@ -436,7 +432,7 @@ for (var i = 0; i < spans.length; i++) {
  }
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
      for (var index in modals) {
